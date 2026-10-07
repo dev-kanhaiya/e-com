@@ -138,9 +138,9 @@ return new class extends Migration
             $table->foreignId('order_id')->nullable()->constrained()->nullOnDelete();
             $table->unsignedTinyInteger('rating'); // 1-5
             $table->text('comment');
-           $table->string('status')->default('approved'); // approved, pending, rejected
-$table->boolean('is_approved')->default(true);
-$table->timestamps();
+            $table->string('status')->default('approved'); // approved, pending, rejected
+            $table->boolean('is_approved')->default(true);
+            $table->timestamps();
         });
     }
 
