@@ -141,7 +141,7 @@
 
   var form = document.getElementById('checkout-form');
   form.addEventListener('submit', function(event) {
-    var selectedAddress = document.querySelector('input[name="shipping_address_id"]:checked');
+    var selectedAddress = document.querySelector('input[name="address_id"]:checked');
     if (!selectedAddress) {
       event.preventDefault();
       alert('Please select a delivery address before placing order.');
